@@ -1,0 +1,33 @@
+import os
+import json
+from datetime import datetime
+
+# Directorul curent de lucru
+current_directory = os.getcwd()
+
+# Generare eșantion GeoJSON
+geojson_data = {
+    "type": "FeatureCollection",
+    "metadata": {
+        "project": "CIVIC-LAND Municipal Blueprint",
+        "generated_at": datetime.utcnow().isoformat()
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {"parcel_id": "PARCEL-0001", "area_sqm": 500},
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [[[23.6236, 46.7712], [23.6246, 46.7712], [23.6246, 46.7722], [23.6236, 46.7722], [23.6236, 46.7712]]]
+            }
+        }
+    ]
+}
+
+# Calea completă unde va fi salvat fișierul
+file_path = os.path.join(current_directory, "civic_land_parcels.geojson")
+
+with open(file_path, "w", encoding="utf-8") as f:
+    json.dump(geojson_data, f, indent=2)
+
+print(f"Fișierul a fost creat cu succes aici:\n-> {file_path}")
