@@ -184,3 +184,8 @@ contract CivicLandLeaseEngine is Ownable {
 | - Earns % share of lease revenues |               | - Discounts on monthly lease rate |
 +-----------------------------------+               +-----------------------------------+
 Tokenomics & MechanicsUtility & Staking ($CIVIC-LAND):Early prospective residents stake tokens to secure priority plot selection on the municipal GIS map.Staking tokens grants a 10–20% discount on monthly lease payments.Infrastructure Revenue Sharing:30% of incoming monthly lease payments (€200/plot) are automatically routed via smart contract to the Infrastructure Liquidity Pool to repay municipal construction bonds.Decentralized Audit & Governance:Token stakers and residents vote on community infrastructure priorities (e.g., timing of transition from septic tanks to centralized sewage treatment, installation of municipal parks or sports facilities).
+
+
+
+
+[![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=for-the-badge&logo=paypal)](https://paypal.me/marcelcluj) For Succes !!!
